@@ -351,7 +351,7 @@
     },
     "demomode": false,
     "tax": {
-      "defaultCountry": "PL",
+      "defaultCountry": “US”,
       "defaultRegion": "",
       "sourcePriceIncludesTax": false,
       "calculateServerSide": true
@@ -363,7 +363,7 @@
           "method_code": "flatrate",
           "carrier_code": "flatrate",
           "amount": 4,
-          "price_incl_tax": 5,
+          "price_incl_tax": ,
           "default": true,
           "offline": true
         }
