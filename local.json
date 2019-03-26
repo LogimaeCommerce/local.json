@@ -34,7 +34,7 @@
     },
     "elasticsearch": {
       "httpAuth": "",
-      "host": "https://pay.logima/api/catalog",
+      "host": "https://domain.io/api/catalog",
       "index": "vue_storefront_catalog",
       "min_score": 0.02,
       "csrTimeout": 5000,
@@ -236,17 +236,17 @@
       "askBeforeRemoveProduct": true,
       "displayItemDiscounts": true,
       "minicartCountType": "quantities",
-      "create_endpoint": "https://pay.logima.io/api/cart/create?token={{token}}",
-      "updateitem_endpoint": "https://pay.logima.io/api/cart/update?token={{token}}&cartId={{cartId}}",
-      "deleteitem_endpoint": "https://pay.logima.io/api/cart/delete?token={{token}}&cartId={{cartId}}",
-      "pull_endpoint": "https://pay.logima.io/api/cart/pull?token={{token}}&cartId={{cartId}}",
-      "totals_endpoint": "https://pay.logima.io/api/cart/totals?token={{token}}&cartId={{cartId}}",
-      "paymentmethods_endpoint": "https://pay.logima.io/api/cart/payment-methods?token={{token}}&cartId={{cartId}}",
-      "shippingmethods_endpoint": "https://pay.logima.io/api/cart/shipping-methods?token={{token}}&cartId={{cartId}}",
-      "shippinginfo_endpoint": "https://pay.logima.io/api/cart/shipping-information?token={{token}}&cartId={{cartId}}",
-      "collecttotals_endpoint": "https://pay.logima.io/api/cart/collect-totals?token={{token}}&cartId={{cartId}}",
-      "deletecoupon_endpoint": "https://pay.logima.io/api/cart/delete-coupon?token={{token}}&cartId={{cartId}}",
-      "applycoupon_endpoint": "https://pay.logima.io/api/cart/apply-coupon?token={{token}}&cartId={{cartId}}&coupon={{coupon}}"
+      "create_endpoint": "https://domain.io/api/cart/create?token={{token}}",
+      "updateitem_endpoint": "https://domain.io/api/cart/update?token={{token}}&cartId={{cartId}}",
+      "deleteitem_endpoint": "https://domain.io/api/cart/delete?token={{token}}&cartId={{cartId}}",
+      "pull_endpoint": "https://domain.io/api/cart/pull?token={{token}}&cartId={{cartId}}",
+      "totals_endpoint": "https://domain.io/api/cart/totals?token={{token}}&cartId={{cartId}}",
+      "paymentmethods_endpoint": "https://domain.io/api/cart/payment-methods?token={{token}}&cartId={{cartId}}",
+      "shippingmethods_endpoint": "https://domain.io/api/cart/shipping-methods?token={{token}}&cartId={{cartId}}",
+      "shippinginfo_endpoint": "https://domain.io/api/cart/shipping-information?token={{token}}&cartId={{cartId}}",
+      "collecttotals_endpoint": "https://domain.io/api/cart/collect-totals?token={{token}}&cartId={{cartId}}",
+      "deletecoupon_endpoint": "https://domain.io/api/cart/delete-coupon?token={{token}}&cartId={{cartId}}",
+      "applycoupon_endpoint": "https://domain.io/api/cart/apply-coupon?token={{token}}&cartId={{cartId}}&coupon={{coupon}}"
     },
     "products": {
       "useShortCatalogUrls": false,
@@ -262,7 +262,7 @@
       "clearPricesBeforePlatformSync": false,
       "waitForPlatformSync": false,
       "setupVariantByAttributeCode": true,
-      "endpoint": "https://pay.logima.io/api/product",
+      "endpoint": "https://domain.io/api/product",
       "defaultFilters": ["color", "size", "price", "erin_recommends"],
       "filterFieldMapping": {
         "category.name": "category.name.keyword"
@@ -290,7 +290,7 @@
     },
     "orders": {
       "directBackendSync": true,
-      "endpoint": "https://pay.logima.io/api/order",
+      "endpoint": "https://domain.io/api/order",
       "payment_methods_mapping": {
       },
       "offline_orders": {
@@ -322,23 +322,23 @@
       }
     },
     "reviews": {
-      "create_endpoint": "https://pay.logima.io/api/review/create"
+      "create_endpoint": "https://domain.io/api/review/create"
     },
     "users": {
       "autoRefreshTokens": true,
-      "endpoint": "https://pay.logima.io/api/user",
-      "history_endpoint": "https://pay.logima.io/api/user/order-history?token={{token}}",
-      "resetPassword_endpoint": "https://pay.logima.io/api/user/reset-password",
-      "changePassword_endpoint": "https://pay.logima.io/api/user/change-password?token={{token}}",
-      "login_endpoint": "https://pay.logima.io/api/user/login",
-      "create_endpoint": "https://pay.logima.io/api/user/create",
-      "me_endpoint": "https://pay.logima.io/api/user/me?token={{token}}",
-      "refresh_endpoint": "https://pay.logima.io/api/user/refresh"
+      "endpoint": "https://domain.io/api/user",
+      "history_endpoint": "https://domain.io/api/user/order-history?token={{token}}",
+      "resetPassword_endpoint": "https://domain.io/api/user/reset-password",
+      "changePassword_endpoint": "https://domain.io/api/user/change-password?token={{token}}",
+      "login_endpoint": "https://domain.io/api/user/login",
+      "create_endpoint": "https://domain.io/api/user/create",
+      "me_endpoint": "https://domain.io/api/user/me?token={{token}}",
+      "refresh_endpoint": "https://domain.io/api/user/refresh"
     },
     "stock": {
       "synchronize": true,
       "allowOutOfStockInCart": true,
-      "endpoint": "https://pay.logima.io/api/stock"
+      "endpoint": "https://domain.io/api/stock"
     },
     "images": {
       "useExactUrlsNoProxy": false,
@@ -347,7 +347,7 @@
     },
     "install": {
       "is_local_backend": true,
-      "backend_dir": "../logima-pwa-api"
+      "backend_dir": "../vue-storefront-api"
     },
     "demomode": false,
     "tax": {
@@ -383,17 +383,17 @@
       "bundleAllStoreviewLanguages": true
     },
     "mailchimp": {
-      "endpoint": "https://pay.logima.io/api/ext/mailchimp-subscribe/subscribe"
+      "endpoint": "https://domain.io/api/ext/mailchimp-subscribe/subscribe"
     },
     "mailer": {
       "endpoint": {
-        "send": "https://pay.logima.io/api/ext/mail-service/send-email",
-        "token": "https://pay.logima.io/api/ext/mail-service/get-token"
+        "send": "https://domain.io/api/ext/mail-service/send-email",
+        "token": "https://domain.io/api/ext/mail-service/get-token"
       },
       "contactAddress": "contributors@vuestorefront.io",
       "sendConfirmation": true
     },
-    "theme": "@logima-pwa/theme-default",
+    "theme": "@vue-storefront/theme-default",
     "analytics": {
       "id": false
     },
@@ -401,8 +401,8 @@
       "id": false
     },
     "cms": {
-      "endpoint": "https://pay.logima.io/api/ext/cms-data/cms{{type}}/{{cmsId}}",
-      "endpointIdentifier": "https://pay.logima.io/api/ext/cms-data/cms{{type}}Identifier/{{cmsIdentifier}}/storeId/{{storeId}}"
+      "endpoint": "https://domain.io/api/ext/cms-data/cms{{type}}/{{cmsId}}",
+      "endpointIdentifier": "https://domain.io/api/ext/cms-data/cms{{type}}Identifier/{{cmsIdentifier}}/storeId/{{storeId}}"
     },
     "cms_block": {
       "max_count": 500
