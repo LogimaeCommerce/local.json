@@ -4,20 +4,20 @@
       "port": 3000,
       "protocol": "https",
       "api": "api",
-      "devServiceWorker": false,
+      "devServiceWorker": true,
       "useOutputCacheTagging": false,
       "useOutputCache": false,
       "outputCacheDefaultTtl": 86400,
       "availableCacheTags": ["product", "category", "home", "checkout", "page-not-found", "compare", "my-account", "P", "C", "error"],
       "invalidateCacheKey": "aeSu7aip",
-      "dynamicConfigReload": false,
+      "dynamicConfigReload": true,
       "dynamicConfigContinueOnError": false,
       "dynamicConfigExclude": ["ssr", "storeViews", "entities", "localForage", "shipping", "boost", "query"],
       "dynamicConfigInclude": [],
       "elasticCacheQuota": 4096
     },
     "seo": {
-      "useUrlDispatcher": false
+      "useUrlDispatcher": true
     },    
     "console": {
       "showErrorOnProduction" : true,
@@ -34,13 +34,13 @@
     },
     "elasticsearch": {
       "httpAuth": "",
-      "host": "https://storedomain.io/api/catalog",
+      "host": "/api/catalog",
       "index": "vue_storefront_catalog",
       "min_score": 0.02,
       "csrTimeout": 5000,
       "ssrTimeout": 1000,
       "queryMethod": "GET",
-      "disableLocalStorageQueriesCache": true,
+      "disableLocalStorageQueriesCache": false,
       "searchScoring": {
         "attributes": {
           "attribute_code": {
@@ -227,8 +227,8 @@
       "bypassCartLoaderForAuthorizedUsers": true,
       "multisiteCommonCart": true,
       "serverMergeByDefault": true,
-      "serverSyncCanRemoveLocalItems": false,
-      "serverSyncCanModifyLocalItems": false,
+      "serverSyncCanRemoveLocalItems": true,
+      "serverSyncCanModifyLocalItems": true,
       "synchronize": true,
       "synchronize_totals": true,
       "setCustomProductOptions": true,
@@ -342,7 +342,7 @@
     },
     "images": {
       "useExactUrlsNoProxy": false,
-      "baseUrl": "https://demo.vuestorefront.io/img/",
+      "baseUrl": "https://estore.logima.io/img/",
       "productPlaceholder": "/assets/placeholder.jpg"
     },
     "install": {
@@ -448,3 +448,4 @@
     }
 
 }
+
