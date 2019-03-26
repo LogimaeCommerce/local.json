@@ -35,7 +35,7 @@
     "elasticsearch": {
       "httpAuth": "",
       "host": "https://pay.logima/api/catalog",
-      "index": "logima_pwa_catalog",
+      "index": "vue_storefront_catalog",
       "min_score": 0.02,
       "csrTimeout": 5000,
       "ssrTimeout": 1000,
@@ -92,7 +92,7 @@
         "url": "/de",
         "elasticsearch": {
           "host": "localhost:8080/api/catalog",
-          "index": "logima_pwa_catalog_de"
+          "index": "vue_storefront_catalog_de"
         },
         "tax": {
           "sourcePriceIncludesTax": false,
@@ -119,7 +119,7 @@
         "url": "/it",
         "elasticsearch": {
           "host": "localhost:8080/api/catalog",
-          "index": "logima_pwa_catalog_it"
+          "index": "vue_storefront_catalog_it"
         },
         "tax": {
           "sourcePriceIncludesTax": false,
